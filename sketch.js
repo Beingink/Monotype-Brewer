@@ -181,7 +181,7 @@ else
 function savename(){
 
 
-  save( "Variant" + frameCount+ ".jpg")  
+  save( "Brew" + frameCount+ ".jpg")  
   
 
 }
