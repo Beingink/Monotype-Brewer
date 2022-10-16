@@ -1,0 +1,83 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  background: #FFFFFF;
+
+}
+canvas {
+  display: block;
+}
+
+
+div{
+/* 	border: 4px solid;
+	border-color: red;
+	width:200px; 
+	height:200px;
+} */
+
+
+/* Styles the whole slider */
+.mySliders{
+  width: 80px;
+  background-color: auto;
+  
+  /* Removes some defaults */
+  -webkit-appearance: none;
+}
+
+
+/* These styles affect what happens when the cursor is focused on the slider (i.e. clicking it) */
+.mySliders:focus {
+  
+  /* Stops the default outline showing up */
+  outline: none;
+}
+
+/* This is the "track" that the slider sits on  */
+.mySliders::-webkit-slider-runnable-track {
+  background: #3C5800;
+  height: 10px;
+  -webkit-appearance: auto;
+  
+  /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+  cursor: pointer;
+  
+}
+
+/* This is the moveable bit of the slider, known as the "thumb"*/
+.mySliders::-webkit-slider-thumb {
+  width: 20px;
+  height: 22px;
+  background: #B0F41F;
+  cursor: pointerw;
+  -webkit-appearance: none;
+  
+  /* negative top padding moves it up */
+  margin-top: -6px;
+
+  
+  /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+  border-radius: 32px;
+  
+}
+
+
+input[type="color" value="#000000"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+    border-radius: 32px;
+}
+input[type="color"  value="#000000"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+    border-radius: 32px;
+}
+input[type="color"  value="#000000"]::-webkit-color-swatch {
+	border: none;
+    border-radius: 32px;
+}
+
+
